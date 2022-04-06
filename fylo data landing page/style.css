@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+*{
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    
+    background-color: hsl(217, 28%, 15%);
+    height: 10vh;
+    
+
+}
+.navbar-conteiner{
+    display: flex;
+    align-items: center;
+    gap: 1000px;
+    padding-top: 13px;
+}
+
+.navbar-conteiner>img{
+    height: 45px;
+    padding-left: 20px;
+    
+}
+
+.navbar-conteiner>ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.navbar-conteiner>ul>li>a{
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s;
+    color:  white;
+    
+    
+}
+
+.navbar-conteiner>ul>li>a:hover{
+    border-bottom: 0.4px solid hsl(0, 0%, 60%);
+    
+    
+   
+    
+}
+
+main{
+    background-color: hsl(217, 28%, 15%);
+    color: white;
+    
+}
+
+.main-informations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-informations>h2{
+    font-size: 2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-actions{
+    
+    color: white;
+    background-color: hsl(218, 28%, 13%);
+    display: grid;
+    grid-template-rows: 100px 100px 50px 150px;
+    grid-template-columns: 1fr 1fr;
+    height: 65vh;
+    gap: 60px;
+}
+
+.actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.actions>.security{
+    padding-top: 135px;
+}
+
+.actions>.file{
+    padding-top: 270px;
+}
+
+.actions>.collaboration{
+    padding-top: 270px;
+}
+
+.actions>.access{
+    padding-top: 130px;
+}
+
+.actions>h4{
+    padding: 10px 0;
+}
+
+.talk-about{
+
+    background-color:hsl(218, 28%, 13%);
+    color:white;
+    
+}
+
+.talk-about-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.talk-about-conteiner>.rigth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.talk-about-conteiner>.rigth>p{
+    padding-top: 10px;
+}
+
+.talk-about-conteiner>.rigth>.separar{
+    padding-left: 35px;
+}
+
+.talk-about-feedback{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background-color:hsl(218, 28%, 13%) ;
+    height: 60vh;
+    
+}
+
+.conteiner{
+    height: 35vh;
+    background-color: hsl(219, 30%, 18%);
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+
+.conteiner>p{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.conteiner>.imagem{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.conteiner>.imagem>img{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.get-access{
+    background-color:hsl(218, 28%, 13%) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-access-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(217, 28%, 15%);
+    border-radius: 7px;
+    color: white;
+    height: 30vh;
+}
+
+.get-access-conteiner>.text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-access-conteiner>.text>h2{
+
+    padding-bottom: 15px;
+    font-size: 2em;
+}
+
+.get-access-conteiner>.text>p{
+    padding-bottom: 15px;
+}
+.email{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+}
+.email>.input>input{
+    border-radius: 15px;
+    height: 50px;
+    width: 400px;
+    margin-left: 25px;
+}
+.email>.input>small{
+    visibility: hidden;
+    margin-left: 25px;
+}
+.email>button{
+    width: 200px;
+    height: 60px;
+    border-radius: 35px;
+    color: white;
+    background-color: hsl(176, 68%, 64%);
+    cursor: pointer;
+}
+
+.email>.input>input::placeholder{
+
+    padding-left: 10px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input.erro>small{
+    color: hsl(0, 100%, 63%);
+    visibility: visible;
+    margin-top: 4px;
+    margin-left: 30px;
+
+
+}
+
+.input.sucesso>input{
+    border-color: #2ecc71;
+}
