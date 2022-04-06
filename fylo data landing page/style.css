@@ -261,6 +261,10 @@ main{
 
 }
 
+.input.erro>input{
+    border-color:hsl(0, 100%, 63%) ;
+}
+
 .input.sucesso>input{
     border-color: #2ecc71;
 }

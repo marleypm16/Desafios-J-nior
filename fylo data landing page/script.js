@@ -1,14 +1,18 @@
 const email=document.getElementById('email')
 const getaccess=document.getElementById('get')
 
+
 getaccess.addEventListener("submit", (e) =>{
     e.preventDefault()
+
     checkInput()
 })
 
 function checkInput(){
 
     const emailvalue=email.value
+
+
 
     if(emailvalue == ''){
 
@@ -17,6 +21,7 @@ function checkInput(){
     else{
         SetSucesso(email)
     }
+
 
 }
 
