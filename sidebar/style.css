@@ -59,7 +59,7 @@ body{
     font-size: 20px;
     height: 50px;
     text-align: center;
-    line-height: 50px;
+    line-height: 50px; /* aqui é como um 'padding top' defino a altura da linha da minha div */
     transform: translateX(-50%);
 }
 .sidebar.active #btn{
@@ -92,10 +92,10 @@ body{
     white-space: nowrap;
 }
 .sidebar>ul>li>a>span{
-    opacity: 0;
+    opacity: 0; /*aqui é como se fosse um visibility hidden, so que a opacity 0 define que o elemento esta transparente*/
 }
 .sidebar.active>ul>li>a>span{
-    opacity: 1;
+    opacity: 1; /*aqui é como se fosse um visibility visible, so que a opacity 1 define que o elemento está opaco*/
 }
 
 .sidebar>ul>li>.tooltip{

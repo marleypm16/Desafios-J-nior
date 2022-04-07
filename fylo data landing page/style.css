@@ -17,8 +17,8 @@
 .navbar-conteiner{
     display: flex;
     align-items: center;
-    gap: 1000px;
-    padding-top: 13px;
+    gap: 70%;
+    padding-top: 13px; 
 }
 
 .navbar-conteiner>img{
@@ -48,10 +48,7 @@
 
 .navbar-conteiner>ul>li>a:hover{
     border-bottom: 0.4px solid hsl(0, 0%, 60%);
-    
-    
-   
-    
+       
 }
 
 main{
@@ -267,4 +264,17 @@ main{
 
 .input.sucesso>input{
     border-color: #2ecc71;
+}
+
+
+.signin-conteiner{
+    position: absolute;
+    left: 87%;
+    height: 100px;
+    color: white;
+    opacity: 0;
+}
+
+.signin-conteiner.active{
+    opacity: 1;
 }
