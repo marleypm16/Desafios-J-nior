@@ -8,6 +8,8 @@ button.onclick = (e) =>{
     e.preventDefault()
 
     checkInput()
+
+
 }
 
 function checkInput(){
@@ -17,35 +19,46 @@ function checkInput(){
     const confirmvalue=confirma.value
 
     if(emailvalue == ''){
-        setErro(email, 'email cannot be blank')
+    setErro(email, 'Email cannot be blank')
+}
+else{
+    setSucesso(email)
+}
+if(uservalue == ''){
+    setErro(user, 'Username cannot be blank')
+}
+else{
+    setSucesso(user)
+}
+if(senhavalue == ''){
+    setErro(senha, 'Password cannot be blank')
+}
+else if(senhavalue.length < 7){
+    setErro(senha,'Password must be at least 7 characters')
+}
+else{
+    setSucesso(senha)
+}
+if(confirmvalue == ''){
+    setErro(confirma, 'Password Confirmation cannot be blank')
+}
+else if(confirmvalue != senhavalue){
+    setErro(confirma,'Passwords do not match')
+}
+else{
+    setSucesso(confirma)
+    button.onclick=function(){
+
+        location.href="http://127.0.0.1:5500/sidebar/index.html"
     }
-    else{
-        setSucesso(email)
-    }
-    if(uservalue == ''){
-        setErro(user, 'Username cannot be blank')
-    }
-    else{
-        setSucesso(user)
-    }
-    if(senhavalue == ''){
-        setErro(senha, 'Password cannot be blank')
-    }
-    else if(senhavalue.length < 7){
-        setErro(senha,'Password must be at least 7 characters')
-    }
-    else{
-        setSucesso(senha)
-    }
-    if(confirmvalue == ''){
-        setErro(confirma, 'Password Confirmation cannot be blank')
-    }
-    else if(confirmvalue != senhavalue){
-        setErro(confirma,'Passwords do not match')
-    }
-    else{
-        setSucesso(confirma)
-    }
+    
+}
+
+
+   
+   
+
+    
    
 }
 
@@ -59,4 +72,5 @@ function setErro(input,mensagem){
 function setSucesso(input){
     const conteiner = input.parentElement;
     conteiner.className='conteiner sucesso'
-}
+    
+}   

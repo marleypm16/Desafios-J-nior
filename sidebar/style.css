@@ -193,12 +193,12 @@ body{
 .sidebar>.profile_content>.profile>.profile_details{
     display: flex;
     align-items: center;
-    opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     white-space: nowrap;
 }
 .sidebar.active>.profile_content>.profile>.profile_details{
-    opacity: 1;
+    visibility: visible;
     pointer-events: auto;
 }
 .profile>.profile_details>img{
@@ -222,25 +222,34 @@ body{
 }
 
 .profile #log_out{
+    visibility: visible;
     position: absolute;
     left: 50%;
-    bottom: 3px;
+    bottom: 12px;
     transform: translateX(-50%);
-    min-width: 50px;
-    line-height: 50px;
+    min-width: 25px;
+    line-height: 31px;
     font-size: 20px;
     border-radius: 12px;
     text-align: center;
+    cursor: pointer;
 }
 
-.sidebar.active.profile #log_out{
-    left: 92%;
+.profile #log_out:hover{
+    color: #11101d;
+    background: #fff;
+    transition: all 0.5s ease;
+
+}
+
+.sidebar.active>.profile_content>.profile>.profile_details>i{
+    margin-left: 40%;
 }
 
 .home_content{
     position: absolute;
     height: 100%;
-    width: calc(100%-78px);
+    width: 100%;
     left: 78px;
     transition: all 0.5s ease;
 }
